@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="fontawesome-web/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -44,7 +45,7 @@
     <div class="search-bar">
         <div class="container grid">
             <div class="catalog">
-                <h2><i class="fas fa-bars"></i> All Categories</h2>
+                <h2><i class="fas fa-tags"></i> All Categories</h2>
             </div>
 
             <div class="search flex">
@@ -53,7 +54,7 @@
             </div>
 
             <div class="shopping">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-shopping-cart"><span>0</span></i>
             </div>
 
         </div>
@@ -64,15 +65,53 @@
     <main>
         <div class="container grid">
             <div class="side-bar">
-                <details>
-                    <summary>Categories</summary>
-                    <ul>
-                        <li>Fashion</li>
-                        <li>Fashion</li>
-                        <li>Fashion</li>
-                        <li>Fashion</li>
-                    </ul>
-                </details>
+                <div class="categories-wrapper">
+                    <details>
+                        <summary><span>Cloths</span></summary>
+                        <ul class="box-container">
+                            <li>Shirt</li>
+                            <li>Trousers</li>
+                            <li>Dress</li>
+                            <li>Suit</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary><span>Esthetic</span></summary>
+                        <ul class="box-container">
+                            <li>Makeup</li>
+                            <li>Accessories</li>
+                            <li>Fashion</li>
+                            <li>Parfum</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary><span>Computers & Tech</span></summary>
+                        <ul class="box-container">
+                            <li>Laptop</li>
+                            <li>Desktop computer</li>
+                            <li>Workstation</li>
+                            <li>Widgets</li>
+                            <li>Console devices</li>
+                        </ul>
+                    </details>
+                    <details>
+                        <summary><span>Home furniture</span></summary>
+                        <ul class="box-container">
+                            <li>Desks</li>
+                            <li>Bed</li>
+                            <li>kitchen</li>
+                            <li>Fashion</li>
+                        </ul>
+                    </details>
+                    <hr>
+                    <!-- <h3>Advanced researchs</h3>
+                    <details>
+                        <summary><span>Size</span></summary>
+                        <div class="size-container">
+
+                        </div>
+                    </details> -->
+                </div>
             </div>
 
             <div class="main-sec">
@@ -88,7 +127,7 @@
         <div class="container">
             <div class="flex">
                 <div class="popular">
-                    <h3>Popular Categories</h3>
+                    <h2>Popular Categories</h2>
                     <ul>
                         <li><a href="">Fashion</a></li>
                         <li><a href="">Fashion</a></li>
@@ -99,7 +138,7 @@
                 </div>
 
                 <div class="adresses">
-                    <h3>Our Address</h3>
+                    <h2>Our Address</h2>
                     <ul>
                         <li>Street 123,</li>
                         <li>Oujda Morocco</li>
@@ -108,7 +147,10 @@
                 </div>
 
                 <div class="assistance">
-                    <h3>Talk to our support team <i class="fas fa-headset"></i></h3>
+                    <h2>Talk to our support team <i class="fas fa-headset"></i></h2>
+                    <p>
+                        Our support team is here <strong>24/7</strong> for our customers.
+                    </p>
                 </div>
             </div>
         

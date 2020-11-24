@@ -1,12 +1,16 @@
 
 
 body{
+    font-family: roboto, 'open-sans', sans-serif;
+    background-color: #f0f0f0;
+}
 
-    background-color: #eeeeee;
+details summary:focus{
+    outline: none;
 }
 
 h1,h2{
-    font-family: Roboto;
+    font-family: 'Playfair Display', serif;
     font-size: 3em;
     font-weight: 300;
     margin: 10px 0;
@@ -26,8 +30,13 @@ ul{
     list-style-type: none;
 }
 
+details{
+    margin: 10px 0;
+    cursor: pointer;
+}
+
 .container{
-    width: 1200px;
+    width: 1100px;
     margin: 0 auto;
     position: relative;
     overflow: auto;

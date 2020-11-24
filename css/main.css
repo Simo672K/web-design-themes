@@ -4,15 +4,16 @@
     --active-color: #f8433f;
 }
 
+/* 
+    f0f0f0
+    e1e1e1
+*/
+
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body{
-    font-family: roboto, 'open-sans', sans-serif;
 }
 
 /* this is the header of the page*/
@@ -51,13 +52,15 @@ body{
 
 .logo{
     width: 200px;
-    font-family: Anton;
+    font-family: 'Playfair Display', serif;
     font-size: 2em;
     margin: 10px 30px;
     color: #FFF;
     border-left: solid 4px #FFF;
     padding: 0 5px;
     border-radius: 25px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 
@@ -83,7 +86,7 @@ body{
 .catalog h2{
     font-size: 1.4em;
     text-align: center;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .search{
@@ -121,11 +124,31 @@ body{
 }
 
 .shopping i{
+    position: relative;
     font-size: 2.4em;
     margin: 5px 0 0 150px;
     align-self: center;
 }
+
+.shopping i span{
+    position: absolute;
+    background-color: var(--active-color);
+    top: -5px;
+    right: -15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 18px;
+    text-align: center;
+    padding: 1px 1px 0 0;
+}
+
 /* this is the end of the page header */
+
+
+
+
+
 
 
 /* main section */
@@ -140,17 +163,56 @@ main .grid{
     gap: 20px;
 }
 
+/* side-bar */
 .side-bar{
     width: 100%;
-    background-color: greenyellow;
-    height: 500px;
+    height: fit-content;
+
 }
 
+.categories-wrapper{
+    margin: 5px;
+    padding: 10px;
+    /* border-radius: 5px; */
+    height: fit-content;
+    min-height: 500px;
+    /* box-shadow: 0px 0px 5px #000; */
+    background-color: #e1e1e1;
+}
+
+.categories-wrapper details summary{
+    color: #f8433f;
+    text-transform: uppercase;
+    padding: 3px 0;
+    border-bottom: solid 1px var(--active-color);
+}
+
+.categories-wrapper details summary span{
+    color: black;
+}
+
+.box-container{
+    padding-left: 10px;
+}
+
+.box-container li{
+    line-height: 1.6;
+    margin: 3px;
+}
+
+/* main frame */
 .main-sec{
     width: 100%;
     background-color: violet;
     height: 900px;
 }
+
+
+
+
+
+
+
 
 
 /* footer section */
@@ -163,8 +225,14 @@ footer a{
     color: #FFF;
 }
 
+footer h2{
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
 footer .flex{
-    margin: 30px 0;
+    margin-top: 30px;
     justify-content: space-around;
     height: 150px;
     align-items: stretch;
@@ -181,6 +249,19 @@ footer .flex{
 }
 
 footer h4{
+    margin: 5px 0;
     text-align: center;
+}
+
+footer ul{
+    padding: 5px 10px;
+}
+
+footer ul li{
+    line-height: 1.4;
+}
+
+footer ul a:hover{
+    border-bottom: white solid 2px;
 }
 
