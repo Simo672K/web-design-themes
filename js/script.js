@@ -1,8 +1,9 @@
 
 
-let details = document.querySelector("details");
+
 
 {
+    let details = document.querySelector("details");
     window.onload =()=>{
         details.setAttribute("open","");
     }
